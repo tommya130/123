@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>列印表格</title>
+</head>
+
+<body>
+	<Script>
+		var A = 1;
+		var B = 1;
+		document.write("<table border=1>");
+		document.write(
+			"<tr><td>A</td><td>B</td><td>NOT a</td><td>NOT b</td><td>a AND b</td><td>a OR b</td><td>a XOR b</td></tr>");
+		document.write("<tr><td>" + A + "</td><td>" + B + "</td><td>" + Number(!A) + "</td><td>" + Number(!B) + "</td><td>" +
+			(A & B) + "</td><td>" + (A | B) + "</td><td>" + (A ^ B) + "</tr>");
+		document.write("<tr><td>" + A + "</td><td>" + Number(!B) + "</td><td>" + Number(A) + "</td><td>" + Number(B) +
+			"</td><td>" + (A & B) + "</td></tr>");
+		document.write("</table>");
+	</Script>
+</body>
+
+</html>
